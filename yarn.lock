@@ -1240,15 +1240,15 @@
   dependencies:
     "@types/node" "*"
 
-"@uiowa/uids4@https://github.com/uiowa/uids.git#fab339b":
+"@uiowa/uids4@https://github.com/uiowa/uids.git#53f0052":
   version "4.0.0-alpha1"
-  resolved "https://github.com/uiowa/uids.git#fab339b1f27f62bf61ce08c7536790f2f4567f0b"
+  resolved "https://github.com/uiowa/uids.git#53f0052ab19e5fdaebad0f0d52a2de177e52f42b"
   dependencies:
     vue "^3.2.31"
 
-"@uiowa/uids@https://github.com/uiowa/uids.git#975b6d0":
-  version "3.6.18"
-  resolved "https://github.com/uiowa/uids.git#975b6d0fcd274a9cc07bb617c003b0f4bdee2175"
+"@uiowa/uids@https://github.com/uiowa/uids.git#7f7d591":
+  version "3.6.19"
+  resolved "https://github.com/uiowa/uids.git#7f7d591a7145b21882f5d416f1d9cb9dfc90930d"
   dependencies:
     autoprefixer "^9.8.6"
     cssnano "^4.1.11"

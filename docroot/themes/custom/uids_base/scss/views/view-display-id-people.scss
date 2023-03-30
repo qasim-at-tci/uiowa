@@ -1,23 +1,16 @@
 @import "uids3/assets/scss/_variables.scss";
 @import "uids3/assets/scss/_utilities.scss";
 
+// This file contains the styles for the /admin/config/sitenow/sitenow-people page.
+
 .view-id-people {
   @include margin($top: $lg);
   .view-header {
     width: 100%;
   }
-  .card__media {
-    @include breakpoint(sm) {
-      margin-top: 0;
-    }
-  }
   .view-content {
     @include list-group;
     @include list-group-flush;
-  }
-
-  .views-row {
-    //@include list-group-item;
   }
 
   .view-content:first-child .views-row:first-child {
@@ -40,10 +33,6 @@
       background-color: #fff;
     }
   }
-  .tabledrag-changed-warning {
-    // @extend .alert;
-    // @extend .alert-warning;
-  }
 
   thead {
     @include element-invisible;
@@ -63,6 +52,10 @@
 
   tr.draggable {
     position: relative;
+
+    .card {
+      margin-bottom: 1.6rem;
+    }
 
     .tabledrag-handle {
       margin: 0 0.5rem 0 0;

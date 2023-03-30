@@ -5,3 +5,7 @@
 .hide-session-badges .card span.session {
   display: none;
 }
+
+.card span.badge {
+  margin-left: 0.5rem;
+}

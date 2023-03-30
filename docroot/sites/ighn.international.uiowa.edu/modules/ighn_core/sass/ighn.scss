@@ -8,8 +8,8 @@
 .field__label {
   font-weight: bold;
 }
-.ighn-main-info, .ighn-person-field-groups {
-  margin-bottom: $gutter;
+.field--name-field-ighn-person-position-title {
+  margin-top: 0 !important;
 }
 .field--name-field-ighn-primary-college {
   font-weight: 700;
@@ -99,6 +99,7 @@ div[role=article].node--type-ighn-person.node--view-mode-full {
       .views-row {
         @include breakpoint(sm) {
           margin-bottom: $mobile-width-gutter;
+          margin-top: 0 !important;
         }
 
         @include breakpoint(md) {
@@ -146,6 +147,14 @@ div[role=article].node--type-ighn-person.node--view-mode-full {
           .field--name-title {
             display: block;
           }
+
+          .media__inner {
+            margin-left: 0;
+          }
+
+          padding: 0;
+          margin-bottom: 0;
+
         }
       }
     }
@@ -203,4 +212,48 @@ div[role=article].node--type-ighn-person.node--view-mode-full {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
+}
+
+
+// Person Meta
+.person-meta {
+  &.col-md-6 {
+    padding: 0;
+
+    @include breakpoint(md) {
+      padding-right: $desktop-width-gutter;
+      flex: 0 0 33%;
+    }
+  }
+
+  .field--label-inline {
+    margin-bottom: .7rem;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .h5.field--name-field-person-position {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .h5.field--name-field-person-position .field__item {
+    margin-bottom: 1rem;
+  }
+}
+
+// Person Content
+.person-content {
+  &.col-md-6 {
+    padding: 0;
+    margin-top: $gutter;
+
+    @include breakpoint(md) {
+      flex: 0 0 67%;
+      max-width: 67%;
+      margin-top: 0;
+    }
+  }
 }
